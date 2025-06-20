@@ -114,7 +114,7 @@ const App = () => {
                 <h1>Our Menu</h1>
             </div>
             <>
-                <div>
+                <div className='main__category'>
                     <button id="filter-btn-0" onClick={() => onFilter("All")}>
                     All
                     </button>
