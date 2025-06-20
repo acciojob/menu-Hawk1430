@@ -17,11 +17,13 @@ const Menu = ({ menu, category }) => {
     <div
      className='menu__dishes'
      data-test-id={
-              category === "breakfast"
+              category === "Breakfast"
                 ? "menu-item-breakfast"
-                : category === "lunch"
+                : category === "Lunch"
                 ? "menu-item-lunch"
-                : "menu-item-shakes"
+                : category === "Shakes" 
+                ? "menu-item-shakes"
+                : "menu-item-all"
             } 
     >
       {filteredMenu.map(item => (
