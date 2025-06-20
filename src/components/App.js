@@ -114,10 +114,10 @@ const App = () => {
                 <h1>Our Menu</h1>
             </div>
             <div className='main__category' id='category'>
-                <p onClick={() => handleCategory('All')}>All</p>
-                <p id='#filter-btn-1' onClick={() => handleCategory('Breakfast')}>Breakfast</p>
-                <p id='#filter-btn-2' onClick={() => handleCategory('Lunch')}>Lunch</p>
-                <p id='#filter-btn-3' onClick={() => handleCategory('Shakes')}>Shakes</p>
+                <button onClick={() => handleCategory('All')}>All</button>
+                <button id='#filter-btn-1' onClick={() => handleCategory('Breakfast')}>Breakfast</button>
+                <button id='#filter-btn-2' onClick={() => handleCategory('Lunch')}>Lunch</button>
+                <button id='#filter-btn-3' onClick={() => handleCategory('Shakes')}>Shakes</button>
             </div>
             <Menu menu={menu} category={category}/>
 

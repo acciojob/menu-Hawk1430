@@ -31,11 +31,12 @@ body{
   margin-bottom: 30px;           
 }
 
-.main__category p{
+.main__category button{
     cursor: pointer;
     color: #f59e0b;
     font-weight: 600;
     font-size: larger;
+    border: none;
 }
 
 .menu__dishes {
