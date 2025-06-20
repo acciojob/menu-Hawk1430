@@ -14,7 +14,16 @@ const Menu = ({ menu, category }) => {
   }, [menu, category]);
 
   return (
-    <div className='menu__dishes'>
+    <div
+     className='menu__dishes'
+     data-test-id={
+              i.category === "breakfast"
+                ? "menu-item-breakfast"
+                : i.category === "lunch"
+                ? "menu-item-lunch"
+                : "menu-item-shakes"
+            } 
+    >
       {filteredMenu.map(item => (
         <Card key={item.id} item={item} />
       ))}

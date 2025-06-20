@@ -114,7 +114,7 @@ const App = () => {
                 <h1>Our Menu</h1>
             </div>
             <div className='main__category' id='category'>
-                <button onClick={() => handleCategory('All')}>All</button>
+                <button id='#filter-btn-0' onClick={() => handleCategory('All')}>All</button>
                 <button id='#filter-btn-1' onClick={() => handleCategory('Breakfast')}>Breakfast</button>
                 <button id='#filter-btn-2' onClick={() => handleCategory('Lunch')}>Lunch</button>
                 <button id='#filter-btn-3' onClick={() => handleCategory('Shakes')}>Shakes</button>
