@@ -104,7 +104,7 @@ export const menu = [
 
 const App = () => {
     const [category, setCategory] = useState('All');
-    const handleCategory = (value) => {
+    const onFilter = (value) => {
         setCategory(value);
     }
 
@@ -113,12 +113,22 @@ const App = () => {
             <div className='main__title'>
                 <h1>Our Menu</h1>
             </div>
-            <div className='main__category' id='category'>
-                <button id='#filter-btn-0' onClick={() => handleCategory('All')}>All</button>
-                <button id='#filter-btn-1' onClick={() => handleCategory('Breakfast')}>Breakfast</button>
-                <button id='#filter-btn-2' onClick={() => handleCategory('Lunch')}>Lunch</button>
-                <button id='#filter-btn-3' onClick={() => handleCategory('Shakes')}>Shakes</button>
-            </div>
+            <>
+                <div>
+                    <button id="filter-btn-0" onClick={() => onFilter("all")}>
+                    All
+                    </button>
+                    <button id="filter-btn-1" onClick={() => onFilter("breakfast")}>
+                    Breakfast
+                    </button>
+                    <button id="filter-btn-2" onClick={() => onFilter("lunch")}>
+                    Lunch
+                    </button>
+                    <button id="filter-btn-3" onClick={() => onFilter("shakes")}>
+                    Shakes
+                    </button>
+                </div>
+            </>
             <Menu menu={menu} category={category}/>
 
         </div>
