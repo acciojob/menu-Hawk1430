@@ -115,16 +115,16 @@ const App = () => {
             </div>
             <>
                 <div>
-                    <button id="filter-btn-0" onClick={() => onFilter("all")}>
+                    <button id="filter-btn-0" onClick={() => onFilter("All")}>
                     All
                     </button>
-                    <button id="filter-btn-1" onClick={() => onFilter("breakfast")}>
+                    <button id="filter-btn-1" onClick={() => onFilter("Breakfast")}>
                     Breakfast
                     </button>
-                    <button id="filter-btn-2" onClick={() => onFilter("lunch")}>
+                    <button id="filter-btn-2" onClick={() => onFilter("Lunch")}>
                     Lunch
                     </button>
-                    <button id="filter-btn-3" onClick={() => onFilter("shakes")}>
+                    <button id="filter-btn-3" onClick={() => onFilter("Shakes")}>
                     Shakes
                     </button>
                 </div>
