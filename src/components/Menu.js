@@ -1,9 +1,25 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
+import Card from './Card';
 
-const Menu = () => {
+const Menu = ({ menu, category }) => {
+  const [filteredMenu, setFilteredMenu] = useState([]);
+
+  useEffect(() => {
+    if (category === 'All') {
+      setFilteredMenu(menu);
+    } else {
+      const filtered = menu.filter(item => item.category === category);
+      setFilteredMenu(filtered);
+    }
+  }, [menu, category]);
+
   return (
-    <div>Menu</div>
-  )
-}
+    <div className='menu__dishes'>
+      {filteredMenu.map(item => (
+        <Card key={item.id} item={item} />
+      ))}
+    </div>
+  );
+};
 
-export default Menu
+export default Menu;
