@@ -17,9 +17,9 @@ const Menu = ({ menu, category }) => {
     <div
      className='menu__dishes'
      data-test-id={
-              i.category === "breakfast"
+              category === "breakfast"
                 ? "menu-item-breakfast"
-                : i.category === "lunch"
+                : category === "lunch"
                 ? "menu-item-lunch"
                 : "menu-item-shakes"
             } 
